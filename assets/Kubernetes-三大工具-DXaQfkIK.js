@@ -1,13 +1,13 @@
 const n=`---
-title: Kubernetes-三大元件
+title: Kubernetes-三大工具
 date: July 30, 2025
 category: 系統知識
 tags:
   - Kubernetes
-excerpt: 簡單介紹重要的三個套件kubectl、kubeadm、kubelet
+excerpt: 簡單介紹重要的三個工具kubectl、kubeadm、kubelet
 ---
 
-# Kubernetes-三大元件
+# Kubernetes-三大工具
 
 類型: 系統知識
 狀態: 完成
