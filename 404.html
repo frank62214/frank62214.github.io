@@ -17,9 +17,10 @@
   </script>
 
   <script>
-    // 取得原始的 path + query string，帶回 hackdog.tw
-    var originalUri = window.location.pathname + window.location.search + window.location.hash;
-    var targetUrl = 'https://hackdog.tw' + originalUri;
+    // 將原始 path 編碼為 ?p= 帶到 hackdog.tw，
+    // 避免 hackdog.tw 本身的 404 再次 redirect 造成無限循環
+    var originalPath = window.location.pathname + window.location.search + window.location.hash;
+    var targetUrl = 'https://hackdog.tw/?p=' + encodeURIComponent(originalPath);
     window.location.replace(targetUrl);
   </script>
 </head>

@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/assets/hackdog-icon-DdwNJMZd.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>蘇柏文 - Application Engineer</title>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HL83Z44XG2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-HL83Z44XG2');
-    </script>
-    <script type="module" crossorigin src="/assets/index-YZH_tSYr.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-D481ujD1.css">
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/assets/hackdog-icon-DdwNJMZd.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>蘇柏文 - Application Engineer</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HL83Z44XG2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-HL83Z44XG2');
+  </script>
+
+  <!-- GitHub Pages SPA redirect 解碼：還原 404.html 傳過來的 ?p= 路徑 -->
+  <script>
+    (function () {
+      var redirect = new URLSearchParams(window.location.search).get('p');
+      if (redirect) {
+        var decoded = decodeURIComponent(redirect);
+        // 移除 ?p= 並把真實路徑交給 Vue Router
+        window.history.replaceState(null, '', decoded);
+      }
+    })();
+  </script>
+  <script type="module" crossorigin src="/assets/index-YZH_tSYr.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-D481ujD1.css">
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+
 </html>
