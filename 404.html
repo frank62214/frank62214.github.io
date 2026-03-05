@@ -19,7 +19,7 @@
   <script>
     // 取得原始的 path + query string，帶回 hackdog.tw
     var originalUri = window.location.pathname + window.location.search + window.location.hash;
-    var targetUrl = 'https://hackdog.tw?redirect=' + encodeURIComponent(originalUri);
+    var targetUrl = 'https://hackdog.tw' + originalUri;
     window.location.replace(targetUrl);
   </script>
 </head>
